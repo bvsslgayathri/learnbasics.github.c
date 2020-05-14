@@ -1,0 +1,23 @@
+#include<iostream>
+
+int main()
+{
+	int a;
+	std::cin>>a;
+	int b=a;
+	int d;
+	int s=0;
+	while(b>0)
+	{
+		d=b%10;
+		s=s*10+d;
+		b=b/10;
+	}
+	if(a==s)
+	{
+		std::cout<<"palindrome";
+		
+	}
+	else
+	std::cout<<"not palindrome";
+}
